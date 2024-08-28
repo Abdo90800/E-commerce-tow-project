@@ -65,13 +65,13 @@
 }
 
 .slide-image {
-    width: 70%;
+    width: 50%;
     object-fit: contain;
 }
 
 .slide-title {
     color: var(--primary-color);
-    font-size: 17px;
+    font-size: 12px;
 }
 
 .slide-price {

@@ -9,6 +9,7 @@ import Spinner from "../../components/spinner/Spinner";
 import { addToCart } from "../../redux/apiCalls/cartApiCall";
 
 const SingleProduct = () => {
+  
   const { id } = useParams();
 
   const dispatch = useDispatch();
@@ -18,6 +19,7 @@ const SingleProduct = () => {
 
   useEffect(() => {
     dispatch(fetchSingleProduct(id));
+    window.scrollTo(0, 0);
   }, [id]);
 
   // Add To Cart Handler
